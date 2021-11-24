@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>사이트 제목</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    <!-- 씬 구성하기 !-->
+
+        <a-assets>
+            <a-asset-item id="castleVR" src="castleVR.glb"></a-asset-item>
+            <!-- 해당이름의 GLV모델을 불러와 아이디값은 vr로 부여하기 !-->
+        </a-assets>
+
+        <a-entity gltf-model="#castleVR" rotation="0 0 0" position="0 0 0"></a-entity>
+        <!-- a-assets에서 불러온 객체를 불러와 배치하기 !-->
+
+        <a-sky color="#ECECEC"></a-sky>
+        <!-- 스카이박스의 색 !-->
+
+    </a-scene>
+  </body>
+</html>
